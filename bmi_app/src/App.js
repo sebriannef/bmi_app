@@ -5,19 +5,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          BMI Calculator
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <p> Enter your height in inches:</p>
+      <input></input>
+
+      <p> Enter your weight in pounds:</p>
+      <input></input>
+
+      
+      <div classname="slidecontainer">
+        <p>Custom range slider:</p>
+        <input type="range" min="18.5" max="30" value="30" class="slider" id="myRange"/>
+      </div>
+
     </div>
   );
 }
